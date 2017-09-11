@@ -22,7 +22,7 @@ pod 'FirebaseChat'
 
 ## Author
 
-satishbabariya, ios3.webmobtech@gmail.com
+satishbabariya, satish.babariya@gmail.com
 
 ## License
 
