@@ -24,6 +24,14 @@
 		0F73163B1F668CFA009CF551 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F73163A1F668CFA009CF551 /* FirebaseDatabase.framework */; };
 		0F73163D1F668D23009CF551 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F73163C1F668D23009CF551 /* FirebaseMessaging.framework */; };
 		0F73163F1F668D90009CF551 /* FirebaseStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F73163E1F668D90009CF551 /* FirebaseStorage.framework */; };
+		0F7316451F668FC2009CF551 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7316401F668FC2009CF551 /* ContactsManager.swift */; };
+		0F7316461F668FC2009CF551 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7316411F668FC2009CF551 /* Conversation.swift */; };
+		0F7316471F668FC2009CF551 /* Helper Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7316421F668FC2009CF551 /* Helper Files.swift */; };
+		0F7316481F668FC2009CF551 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7316431F668FC2009CF551 /* Message.swift */; };
+		0F7316491F668FC2009CF551 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7316441F668FC2009CF551 /* User.swift */; };
+		0F73164B1F6690C2009CF551 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F73164A1F6690C2009CF551 /* leveldb-library.framework */; };
+		0F73164D1F6690CA009CF551 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F73164C1F6690CA009CF551 /* nanopb.framework */; };
+		0F73164F1F6690D5009CF551 /* Protobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F73164E1F6690D5009CF551 /* Protobuf.framework */; };
 		110A640A9BE45841BA938B4C29EF5446 /* ThrowAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0F33EFE650B5CE4774260C8F19455E /* ThrowAssertion.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		127CD37052B8E0BC645D83D4664F59D4 /* NMBStringify.m in Sources */ = {isa = PBXBuildFile; fileRef = 856B2E5E4EC8E2BD9ED45AAD6930A672 /* NMBStringify.m */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		17261E344C2027602431A636759AC7F2 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627AA9D56F221212717BC6C0D69D5091 /* DSL.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -43,7 +51,6 @@
 		407C520B762127D048CB2DAE7FA54D96 /* NSString+QCKSelectorName.m in Sources */ = {isa = PBXBuildFile; fileRef = 30707A1F3230E95AF8C214F2C51E3477 /* NSString+QCKSelectorName.m */; };
 		469E9C3ED9FD6009F7C9AAF9E537E212 /* Nimble.h in Headers */ = {isa = PBXBuildFile; fileRef = CE7DD158EC41F47A2796AB19C2CD1AD8 /* Nimble.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47ADB237DB18228B468A1F40EBF533AD /* QuickSelectedTestSuiteBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B9FC85D7FEB2B0433347BA137CC7E1 /* QuickSelectedTestSuiteBuilder.swift */; };
-		4A9A60C44F52D344DD5AB908D36E7969 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76C5BD82B621754DDAB065F728CE292E /* ReplaceMe.swift */; };
 		4CA52B10F664BDB8C1F861FC911C9AC9 /* FirebaseChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 418F865FCCBF8F45FB747DF32459BB9B /* FirebaseChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F3F103945CC52D0A3B8A891BB0E21C4 /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30778608352B15B9CFC7475AD8F932AB /* RaisesException.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		50B80F12A9BAE302F07F6CF94752F462 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 0BC4F2CA1ACAB7C5DC246E5970464CA7 /* mach_excServer.c */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -174,6 +181,14 @@
 		0F73163A1F668CFA009CF551 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
 		0F73163C1F668D23009CF551 /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = "<group>"; };
 		0F73163E1F668D90009CF551 /* FirebaseStorage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseStorage.framework; sourceTree = "<group>"; };
+		0F7316401F668FC2009CF551 /* ContactsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactsManager.swift; path = FirebaseChat/Classes/ContactsManager.swift; sourceTree = "<group>"; };
+		0F7316411F668FC2009CF551 /* Conversation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Conversation.swift; path = FirebaseChat/Classes/Conversation.swift; sourceTree = "<group>"; };
+		0F7316421F668FC2009CF551 /* Helper Files.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Helper Files.swift"; path = "FirebaseChat/Classes/Helper Files.swift"; sourceTree = "<group>"; };
+		0F7316431F668FC2009CF551 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Message.swift; path = FirebaseChat/Classes/Message.swift; sourceTree = "<group>"; };
+		0F7316441F668FC2009CF551 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = FirebaseChat/Classes/User.swift; sourceTree = "<group>"; };
+		0F73164A1F6690C2009CF551 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		0F73164C1F6690CA009CF551 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		0F73164E1F6690D5009CF551 /* Protobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Protobuf.framework; sourceTree = "<group>"; };
 		104135CFA58204DC8EBF1167E28F5206 /* BeLessThanOrEqual.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeLessThanOrEqual.swift; path = Sources/Nimble/Matchers/BeLessThanOrEqual.swift; sourceTree = "<group>"; };
 		10FFD83D547B8B236BCBB6812BC65762 /* BeIdenticalTo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeIdenticalTo.swift; path = Sources/Nimble/Matchers/BeIdenticalTo.swift; sourceTree = "<group>"; };
 		14537A5EC332D4F5F8A2D483B328CC37 /* Nimble.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Nimble.modulemap; sourceTree = "<group>"; };
@@ -226,7 +241,6 @@
 		72B50685A7115CB568F2F23A42E31BEA /* NMBExceptionCapture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NMBExceptionCapture.h; path = Sources/NimbleObjectiveC/NMBExceptionCapture.h; sourceTree = "<group>"; };
 		74704919D51669B4D3DA19529066BD43 /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C2AD2F63645F36689BC3DF18067258 /* QuickTestSuite.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickTestSuite.swift; path = Sources/Quick/QuickTestSuite.swift; sourceTree = "<group>"; };
-		76C5BD82B621754DDAB065F728CE292E /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FirebaseChat/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		792B9A1032B268516D89D81E026BC2D6 /* Pods-FirebaseChat_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FirebaseChat_Tests-resources.sh"; sourceTree = "<group>"; };
 		7AA367A34E0B8C1B01749CCC12FD43C5 /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Sources/Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
 		7D5D0FB844391B21A93E1ED3BE6B78A7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
@@ -338,11 +352,14 @@
 				82A0D2EA352C3B87EC8CE30BE6289B84 /* Contacts.framework in Frameworks */,
 				E1CEEB82C2EEF8F9B9F431B0541D0F89 /* CoreLocation.framework in Frameworks */,
 				0F73162B1F668B28009CF551 /* FirebaseAnalytics.framework in Frameworks */,
+				0F73164D1F6690CA009CF551 /* nanopb.framework in Frameworks */,
 				0F7316391F668CE5009CF551 /* GTMSessionFetcher.framework in Frameworks */,
 				B5F8E7013C766F67A148800EE253913A /* Foundation.framework in Frameworks */,
 				0F73163D1F668D23009CF551 /* FirebaseMessaging.framework in Frameworks */,
+				0F73164F1F6690D5009CF551 /* Protobuf.framework in Frameworks */,
 				0F7316311F668C42009CF551 /* FirebaseInstanceID.framework in Frameworks */,
 				0F7316351F668C4E009CF551 /* GoogleToolboxForMac.framework in Frameworks */,
+				0F73164B1F6690C2009CF551 /* leveldb-library.framework in Frameworks */,
 				0F73162D1F668BB7009CF551 /* FirebaseCore.framework in Frameworks */,
 				0F73162F1F668C06009CF551 /* FirebaseCoreDiagnostics.framework in Frameworks */,
 				0F73163F1F668D90009CF551 /* FirebaseStorage.framework in Frameworks */,
@@ -553,7 +570,11 @@
 		E0BE8BDADFEC31432FDA43B1A5C44519 /* FirebaseChat */ = {
 			isa = PBXGroup;
 			children = (
-				76C5BD82B621754DDAB065F728CE292E /* ReplaceMe.swift */,
+				0F7316401F668FC2009CF551 /* ContactsManager.swift */,
+				0F7316411F668FC2009CF551 /* Conversation.swift */,
+				0F7316421F668FC2009CF551 /* Helper Files.swift */,
+				0F7316431F668FC2009CF551 /* Message.swift */,
+				0F7316441F668FC2009CF551 /* User.swift */,
 				C144467943FAB7E54D21440B52499450 /* Support Files */,
 			);
 			name = FirebaseChat;
@@ -563,6 +584,9 @@
 		E68151FAF820D1BC44D86D3588730C0F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0F73164E1F6690D5009CF551 /* Protobuf.framework */,
+				0F73164C1F6690CA009CF551 /* nanopb.framework */,
+				0F73164A1F6690C2009CF551 /* leveldb-library.framework */,
 				0F73163E1F668D90009CF551 /* FirebaseStorage.framework */,
 				0F73163C1F668D23009CF551 /* FirebaseMessaging.framework */,
 				0F73163A1F668CFA009CF551 /* FirebaseDatabase.framework */,
@@ -774,8 +798,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F7316461F668FC2009CF551 /* Conversation.swift in Sources */,
 				3641A2B7CC74E795BDFA8BE7DE2978E5 /* FirebaseChat-dummy.m in Sources */,
-				4A9A60C44F52D344DD5AB908D36E7969 /* ReplaceMe.swift in Sources */,
+				0F7316451F668FC2009CF551 /* ContactsManager.swift in Sources */,
+				0F7316481F668FC2009CF551 /* Message.swift in Sources */,
+				0F7316471F668FC2009CF551 /* Helper Files.swift in Sources */,
+				0F7316491F668FC2009CF551 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,7 +957,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FirebaseChat/FirebaseChat-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FirebaseChat/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FirebaseChat/FirebaseChat.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -1112,7 +1140,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/FirebaseChat/FirebaseChat-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/FirebaseChat/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/FirebaseChat/FirebaseChat.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;

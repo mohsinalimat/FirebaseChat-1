@@ -24,5 +24,5 @@ s.source_files = 'FirebaseChat/Classes/**/*'
 s.frameworks = 'UIKit' , 'Photos' , 'CoreLocation'
 # s.dependency 'Alamofire', '~> 4.5'
 
-s.vendored_frameworks = 'Firebase/FirebaseAnalytics.framework','Firebase/FirebaseCore.framework','Firebase/FirebaseCoreDiagnostics.framework','Firebase/FirebaseInstanceID.framework','Firebase/FirebaseNanoPB.framework','Firebase/GoogleToolboxForMac.framework','Firebase/FirebaseAuth.framework','Firebase/GTMSessionFetcher.framework','Firebase/FirebaseDatabase.framework','Firebase/FirebaseMessaging.framework','Firebase/FirebaseStorage.framework'
+s.vendored_frameworks = 'Firebase/FirebaseAnalytics.framework','Firebase/FirebaseCore.framework','Firebase/FirebaseCoreDiagnostics.framework','Firebase/FirebaseInstanceID.framework','Firebase/FirebaseNanoPB.framework','Firebase/GoogleToolboxForMac.framework','Firebase/FirebaseAuth.framework','Firebase/GTMSessionFetcher.framework','Firebase/FirebaseDatabase.framework','Firebase/FirebaseMessaging.framework','Firebase/FirebaseStorage.framework','Firebase/leveldb-library.framework','Firebase/nanopb.framework','Firebase/Protobuf.framework'
 end
