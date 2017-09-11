@@ -1,0 +1,6 @@
+framework module FirebaseChat {
+  umbrella header "FirebaseChat-umbrella.h"
+
+  export *
+  module * { export * }
+}
