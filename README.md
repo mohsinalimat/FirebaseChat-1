@@ -22,7 +22,7 @@ pod 'FirebaseChat'
 
 ## Author
 
-satishbabariya, satish.babariya@gmail.com
+Satish Babariya, satish.babariya@gmail.com
 
 ## License
 
